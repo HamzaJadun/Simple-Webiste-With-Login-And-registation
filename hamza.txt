@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hamza Naveed</title>    
+</head>
+<body onload='document.form1.text1.focus()'>
+<script> 
+function ValidateEmail(inputText)
+{
+var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+if(inputText.value.match(mailformat))
+{
+alert("Your Email Is Valid");
+document.form1.text1.focus();
+return true;
+}
+else
+{
+alert("You have entered an invalid email address! Please retype Your Email");
+document.form1.text1.focus();
+return false;
+}
+}
+</script>
+
+<div class="mail">
+<h2><font face="Bahnschrift">Signup To Smart Guardian</font></h2>
+<p><font face="Bahnschrift">Web Technologies (Lab Assignment)</font></p>
+<p><font face="Bahnschrift">Uploaded By Hamza Naveed </font></p>
+<p><font face="Bahnschrift">Submitted To Miss Bushra Mushtaq</font></p>
+<p><font face="Bahnschrift">Title Email And username Validations</font></p>
+<blockquote>
+	<p><font face="Bahnschrift">Type Your Email here</font></p>
+</blockquote>
+
+<form name="form1" action="#"> 
+<ul>
+<input type='text' name='text1'/>
+<p><font face="Bahnschrift">Type Your Name here</font></p>
+<p>
+<input type='text' name='text2'/></p>
+<class="submit"><input type="submit" name="submit" value="Submit" onclick="ValidateEmail(document.form1.text1)"/>&nbsp;&nbsp;
+<input type="reset" name="submit" value="Close"></li>
+<p><font face="Bahnschrift">Click Here For Source Code</font> </p>
+</ul>
+</form>
+</div>
+</body>
+</html>
